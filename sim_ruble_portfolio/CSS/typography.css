@@ -1,0 +1,92 @@
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Pompiere', cursive;
+*/
+
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size:100%;
+    font-size:18px;
+    
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Pompiere', cursive;
+	clear: both;
+    color: black;
+}
+
+.banner-area a{
+    color: black;
+    text-decoration-line: none;
+}
+
+h1{
+    color: black;
+}
+.nav-items p{
+text-align: center;}
+
+p{
+        font-family: 'Raleway', sans-serif;
+}
+
+ .nav-boxes a{
+        font-family: 'Raleway', sans-serif;
+     color: lightgray;
+}
+
+.nav-items p a{
+    text-decoration-line: none;
+    color: black;
+}
+
+footer p{
+	font-family: 'Pompiere', cursive;
+    text-align: center;
+}
+
+
+/*Responsive Typography*/
+
+/*
+@media screen and(min-width: 390px){
+
+}
+*/
+
+
+/*
+.content {
+    font size: 1em;
+}
+*/
+
+/*
+@media screen and (min-width: 50 em){
+    .content {
+            font size: 1.2em;
+            line-height: 1.4em;
+            }  
+}
+*/
+
+/*
+@media screen and (mind-width: 60em){
+    .content{
+        font-size: 1.3em;
+        line-height:1.4em; 
+    }
+}*/
