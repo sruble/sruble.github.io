@@ -1,0 +1,65 @@
+.main-content{
+/*    border-style: solid;*/
+    margin-top:5px;
+/*    margin-right: 300px;*/
+        padding-left: 0.5em;
+    padding-top: 1em;
+}
+
+.main-content p{
+/*        text-align: center;*/
+
+}
+
+.main-content-one{
+    
+}
+
+.main-content-two{
+
+
+}
+
+.main-content-three{
+
+}
+
+.main-content-four{
+
+}
+
+
+
+
+/*RESPONSIVE DESIGN*/
+
+@media screen and(min-width: 400px ){
+    
+    .main-area-content {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    .main-content {
+        width: calc(50% - 2em);
+/*        width: calc(33.33333% - 1em);*/
+    }
+}
+
+
+/*
+  .nav-items{
+           display:flex;
+        justify-content: space-between;
+        margin-top: 2em;
+
+    }
+    
+    .nav-item{
+        width: calc(33.33333% - 1em);
+    }
+    
+    .nav-boxes p{
+        
+    }*/

@@ -1,0 +1,43 @@
+/*
+.footer-container{
+    min-height:100vh;
+}
+*/
+.footer-container{
+/*    background-color: aqua;*/
+    padding-top: 15px;
+/*    min-height: 100vh;*/
+}
+
+.footer-wrap{
+/*    background-color: #eb8146;*/
+    padding-bottom: 2em;
+    margin-top: 2em;
+    padding-top: 1em;
+    width:100%;
+    
+}
+
+.footer-area{
+/*    position: absolute;*/
+    text-align: center;
+/*    bottom:0;*/
+    width: 100%;
+    
+}
+
+
+/*RESPONSIVE DESIGN*/
+
+@media screen and (min-width: 500px){
+    .footer-wrap{
+        margin-top: 4em;
+        padding-top: 2em;
+
+    }
+    
+    .nav-item{
+        width: calc(33.33333% - 1em);
+    }
+}
+
