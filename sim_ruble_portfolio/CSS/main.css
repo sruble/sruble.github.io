@@ -1,31 +1,97 @@
-.main-content{
-/*    border-style: solid;*/
-    margin-top:5px;
-/*    margin-right: 300px;*/
-        padding-left: 0.5em;
+
+/*MAIN CONTENT STYLE SHEET*/
+
+body {
+    padding: 12px;
+}
+
+.main-content {
+    /*    border-style: solid;*/
+    margin-top: 5px;
+    /*    margin-right: 300px;*/
+    padding-left: 0.5em;
     padding-top: 1em;
 }
 
-.main-content p{
-/*        text-align: center;*/
 
+
+.image-two {
+    opacity: 0;
+    animation: hideshow 5s ease infinite;
 }
 
-.main-content-one{
-    
+@keyframes hideshow {
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
-.main-content-two{
 
 
+
+#image-one {
+    transform: translateX(150px);
+    animation: popup 5s 3s ease infinite;
 }
 
-.main-content-three{
+@keyframes popup {
+    0% {
+        transform: translateX(150px);
+    }
 
+    25% {
+        transform: translateX(20px);
+    }
+
+    50% {
+        transform: translateX(150px);
+    }
+
+    100% {
+        transform: translateX(150px);
+    }
 }
 
-.main-content-four{
 
+
+.image-three {
+    padding-left: 50px;
+    padding-right: 50px;
+    animation: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+
+.content {
+    display: grid;
 }
 
 
@@ -33,33 +99,45 @@
 
 /*RESPONSIVE DESIGN*/
 
-@media screen and(min-width: 400px ){
-    
+@media screen and (min-width: 400px) {
+
     .main-area-content {
         display: flex;
         justify-content: space-between;
-        
     }
-    
+
     .main-content {
         width: calc(50% - 2em);
-/*        width: calc(33.33333% - 1em);*/
+        /*        width: calc(33.33333% - 1em);*/
     }
 }
 
 
-/*
-  .nav-items{
-           display:flex;
-        justify-content: space-between;
-        margin-top: 2em;
 
+
+
+
+
+
+
+/*.main-content{
+    margin-top:5px;
+        padding-left: 0.5em;
+    padding-top: 1em;
+}
+
+
+
+
+
+@media screen and(min-width: 400px ){
+    
+    .main-area-content {
+        display: flex;
+        justify-content: space-between;        
     }
     
-    .nav-item{
-        width: calc(33.33333% - 1em);
+    .main-content {
+        width: calc(50% - 2em);
     }
-    
-    .nav-boxes p{
-        
-    }*/
+}*/
