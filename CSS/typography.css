@@ -3,8 +3,18 @@ Typography
 --------------------------------------------------------------*/
 
 /*
+
+FONT FOR: Portfolio Design 1: Gallery Design 
 font-family: 'Raleway', sans-serif;
 font-family: 'Pompiere', cursive;
+
+
+FONT FOR: Portfolio Design 1: Gallery Design
+font-family: 'Great Vibes', cursive;
+font-family: 'Raleway', sans-serif;
+
+font-family: 'Allura', cursive;
+
 */
 
 
@@ -26,6 +36,7 @@ h6 {
 	font-family: 'Pompiere', cursive;
 	clear: both;
     color: black;
+    margin-left: 10px;
 }
 
 .banner-area a{
@@ -58,7 +69,94 @@ footer p{
     text-align: center;
 }
 
+a {
+    text-decoration-line: none;
+}
 
+/*PORTFOLIO DESIGN 1: GALLERY DESIGN */
+
+
+
+.portfolio-one-title-one{
+    font-family: 'Great Vibes',  cursive;;
+    letter-spacing: 1.5px;
+    font-size: 4em;
+    text-align: center;
+    margin-left: -250px;
+    transform: skewY(-10deg);
+}
+
+.portfolio-one-title-two{
+    font-family: 'Great Vibes',  cursive;;
+    letter-spacing: 1.5px;
+    font-size: 4em;
+    text-align: center;
+    transform: skewY(-10deg);
+    margin-top: -100px;
+    margin-left: 50px;
+}
+
+
+.portfolio-one-nav p a{
+    text-decoration-line: none;
+    color: black;
+}
+
+/*PORTFOLIO DESIGN 1: GALLERY DESIGN TWO */
+
+
+#gallery-design-two{
+    background-color: #F3D8D2;
+/*    padding: 5px;*/
+/*    width: 100%; */
+    margin-bottom: 75px;
+    margin-top: -10px;
+    margin-left: -25px;
+    padding-left: 100px;
+    padding-top: 1em;
+    padding-bottom: 2px;
+/*px;
+    padding: 20px; 
+    margin-left: -250px;    
+*/
+}
+.gall-design-two{
+    background-color: #F9EBE2;
+}
+
+
+
+.test-page-title{
+     font-family: 'Great Vibes',  cursive;;
+    letter-spacing: 1.5px;
+    font-size: 4em;
+    text-align: center;
+    margin-left: -250px;
+    transform: skewY(-10deg);
+
+}
+.test-page-title-two{
+     font-family: 'Great Vibes',  cursive;;
+    letter-spacing: 1.5px;
+    font-size: 4em;
+    text-align: center;
+    transform: skewY(-10deg);
+    margin-top: -100px;
+    margin-left: 50px;
+
+}
+
+
+
+.test-centered{
+    background-color: #F3D8D2;
+    padding: 20px; 
+}
+        
+.test-body{
+    background-color: #F9EBE2;
+
+}
 /*Responsive Typography*/
 
 /*

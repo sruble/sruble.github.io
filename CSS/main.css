@@ -1,3 +1,12 @@
+/*MAIN CONTENT STYLE SHEET*/
+/*
+-------------------------------------------------
+*/
+body {
+    padding: 12px;
+
+}
+
 .main-content{
 /*    border-style: solid;*/
     margin-top:5px;
@@ -6,60 +15,176 @@
     padding-top: 1em;
 }
 
-.main-content p{
-/*        text-align: center;*/
-
+.main-area {
+/*    padding: 15px;*/
 }
 
-.main-content-one{
+.image-two {
+    
+     opacity: 0;
+  animation: hideshow 5s  ease infinite;
+}
+@keyframes hideshow {
+  0% { opacity: 1; }
+  10% { opacity: 1; }
+  15% { opacity: 1; }
+  50%{opacity: 0;}
+  100% { opacity: 0; }
+ 
+}
+
+
+
+
+#image-one {
+    transform: translateX(150px);
+    animation: popup 5s 3s ease infinite;
+        
+}
+
+@keyframes popup {
+  0% {
+    transform: translateX(150px);
+  }
+  25% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(150px);
+  }  
     
 }
 
-.main-content-two{
 
+
+.image-three {
+
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    animation: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+     from {transform:rotate(0deg);}
+    to {transform:rotate(180deg);}   
+}
+
+
+.content {
+    
+    display: grid;
+}
+
+/*
+-------------------------------------------------
+*/
+
+
+/*GALLERY DESIGN TWO*/
+/*
+-----------------------------------
+*/
+.gall-groups {
+  background-color: #597E8E;
+}
+.gall{
 
 }
 
-.main-content-three{
-
+.gall-groups img {
+height: 200px; 
+    width: 320px;
+    padding: 5px;
+/*    background-color: white;*/
+    margin: 5px;
+    filter: grayscale(.75);
 }
 
-.main-content-four{
-
+.gall-groups img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
 }
 
+
+#grouped-images {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.hex-group img{
+          -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); 
+     width: 320px;
+      height: 320px;
+}
+/*
+-------------------------------------------------------
+*/
+
+/*Creating a Basic hexagon*/
+/*
+------------------------------------------
+*/
+/*
+    .hexagon {
+      width: 100px;
+      height: 55px;
+      background: red;
+      position: relative;
+    }
+    .hexagon:before {
+      content: "";
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 25px solid red;
+    }
+    .hexagon:after {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 25px solid red;
+    }
+*/
+
+/*
+---------------------------------------------
+*/
+
+.current_work {
+    text-align: center;
+}
 
 
 
 /*RESPONSIVE DESIGN*/
 
-@media screen and(min-width: 400px ){
+@media screen and (min-width: 400px ){
     
     .main-area-content {
         display: flex;
         justify-content: space-between;
         
-    }
+            }
     
     .main-content {
         width: calc(50% - 2em);
-/*        width: calc(33.33333% - 1em);*/
     }
 }
 
-
-/*
-  .nav-items{
-           display:flex;
-        justify-content: space-between;
-        margin-top: 2em;
-
-    }
-    
-    .nav-item{
-        width: calc(33.33333% - 1em);
-    }
-    
-    .nav-boxes p{
-        
-    }*/
