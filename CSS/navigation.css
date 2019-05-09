@@ -4,14 +4,7 @@
 
 }
 
-.nav-item {
 
-}
-
-.nav-item p{
-
-
-}
 
 .nav-boxes{
     height: 150px; 
@@ -42,11 +35,40 @@ margin: 1em;
 }
 
 
+/*
+
+PORTFOLIO DESIGN: GALLERY DESIGN 
+
+*/
+
+.portfolio-one-nav li{
+    list-style-type: none; 
+    padding: 5px;
+}
+
+.portfolio-one-nav .portfolio-one-nav-items li{
+    display: block;
+    text-align: center;
+    
+}
+
+.portfolio-one-nav {
+    margin-bottom: 25px;
+}
+
+.portfolio-one-nav a{
+    text-decoration: none;
+}
+
+.home-nav{
+    margin-top: -15px;
+}
+
 /*RESPONSIVE DESIGN*/
 
 @media screen and (min-width: 500px){
     .nav-items{
-           display:flex;
+        display:flex;
         justify-content: space-between;
         margin-top: 2em;
 
@@ -54,12 +76,7 @@ margin: 1em;
     
     .nav-item{
         width: calc(33.33333% - 1em);
-    }
-    
-    .nav-boxes p{
-        
-    }
-    
+    }   
 }
 
 

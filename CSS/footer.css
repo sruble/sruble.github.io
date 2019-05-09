@@ -1,30 +1,25 @@
 /*
-.footer-container{
-    min-height:100vh;
-}
+FOOTER STYLE SHEET
 */
+
 .footer-container{
-/*    background-color: aqua;*/
-    padding-top: 15px;
-/*    min-height: 100vh;*/
+    padding-top: 0px;    width: 100%;
+
 }
 
 .footer-wrap{
-/*    background-color: #eb8146;*/
     padding-bottom: 2em;
     margin-top: 2em;
     padding-top: 1em;
     width:100%;
-    
 }
 
 .footer-area{
-/*    position: absolute;*/
     text-align: center;
-/*    bottom:0;*/
     width: 100%;
-    
+
 }
+
 
 
 /*RESPONSIVE DESIGN*/
@@ -40,4 +35,7 @@
         width: calc(33.33333% - 1em);
     }
 }
+
+  
+    
 
