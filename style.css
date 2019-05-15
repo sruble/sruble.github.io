@@ -9,4 +9,5 @@ The primary stylesheet// ORDER OF APPEARANCE MATTERS
 @import url('CSS/banner.css');
 @import url('CSS/main.css');
 @import url('fonts/icomoon/style.css');
-
+/*@import url('lightbox.min.css');*/
+/*@import url('JS/colorbox/jquery.colobox-min.js');*/
