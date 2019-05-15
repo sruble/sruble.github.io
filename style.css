@@ -1,19 +1,12 @@
 /*
-The primary stylesheet for Oolith. This sheet pulls in all the components in order of appearance.
+The primary stylesheet// ORDER OF APPEARANCE MATTERS
 */
 
-/*@import url('CSS/reset.css');*/
-/*@import url('CSS/accessibility.css');*/
-/*@import url('CSS/layout.css');*/
+
 @import url('CSS/typography.css');
 @import url('CSS/navigation.css');
 @import url('CSS/footer.css');
 @import url('CSS/banner.css');
 @import url('CSS/main.css');
-    
-/*@import url('CSS/masthead.css');*/
-/*@import url('CSS/navigation.css');*/
-/*@import url('CSS/images.css');*/
-/*@import url('CSS/banner.css');*/
-/*@import url('CSS/nav.css');*/
-/*@import url('CSS/footer.css');*/
+@import url('fonts/icomoon/style.css');
+
