@@ -1,8 +1,5 @@
 /*Navigation*/
 
-.homepage-nav{
-
-}
 
 
 
@@ -30,9 +27,9 @@ margin: 1em;
 }
 
 /*Photography page NAVIGATION*/
-.secondary-nav{
+/*.secondary-nav{
     padding-left: 
-}
+}*/
 
 
 /*
@@ -89,6 +86,6 @@ PORTFOLIO DESIGN: GALLERY DESIGN
     }
     
     .nav-item{
-        width: calc (33.33333% - 3em);
+        width: calc(33.33333% - 3em);
     }
 }
