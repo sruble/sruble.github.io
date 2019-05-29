@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sim Ruble Portfolio</title>
+    <meta name="description" content="Core starting template for responsive web design in the browser" />
+
+    <!-- Stylesheets, inlcuding custom fonts, go here -->
+    <link rel="stylesheet" href="../wwwroot/css/style.css" type="text/css" media="all">
+
+    <!--    custom Font from Google-->
+    <link href="https://fonts.googleapis.com/css?family=Pompiere|Raleway" rel="stylesheet">
+
+    <script src="../wwwroot/js/svg-injector.min.js"></script>
+
+
+</head>
+
+<body>
+    <!--    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>-->
+
+    <header class="header-area">
+        <!--change from masthead-->
+        <div class="site-branding">
+            <h1 class="site-title"><a href="index.html">Sim Ruble: Portfolio</a></h1>
+        </div><!-- .site-title -->
+        <div>
+            <!--<a><img src="../wwwroot/images/po9.jpg"></a>-->
+
+        </div>
+    </header><!-- .masthead --><!--now changed to header-area--->
+
+
+    <section class="nav-items">
+        <div>
+            <p class=""><a href="index.html">Home</a></p>
+        </div>
+        <div>
+            <p class=""><a href="web_development.html">Work</a></p>
+        </div>
+        <div>
+            <p class=""><a href="photography.html">Photography</a></p>
+        </div>
+        <div>
+            <p class=""><a href="about_me.html">About Me</a></p>
+        </div>
+    </section>
+
+
+    <main class="main-area">
+        <div class="content">
+
+            <section class="content-section">
+                <div class="centered">
+                    <h2 class="content-heading">[Lab Assignments]</h2>
+                    <p class="content-text">
+                        <i>Lab assignments for BIT 175</i>
+                    </p>
+                </div><!-- .centered -->
+            </section><!-- .banner -->
+
+
+            <h2>JavaScript Library: Icon Font and SVG Animation</h2>
+            <p></p>
+            <div class="main-content">
+                <section>
+                    <div>
+                        <img class="image-two" src="../wwwroot/images/animation_lab.svg" style="width: 2em; height: 2em; margin: .5em;">
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <img class="image-three" src="../wwwroot/images/animation_lab.svg" style="width: 2em; height: 2em; margin: .5em;">
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <img id="image-one" src="../wwwroot/images/animation_lab.svg" style="width:2em; height: 2em; margin:0.5em;">
+                    </div>
+                </section>
+                <script>
+                    // Elements to inject
+                    var mySVGsToInject = document.querySelectorAll('img.inject-me');
+
+                    // Do the injection
+                    SVGInjector(mySVGsToInject);
+                </script>
+            </div>
+
+            <h2>JS Animation Library</h2>
+            <div>
+                <p>
+                    Lab overview and description; summary; explaination; other.
+                </p>
+                <p>GSAP tools that I used were: .</p>
+                <p>I chose these libraries because...</p>
+                <div>the visual will go here</div>
+
+
+                <a id="jsLab" href="web_development.html">
+                    <div id="myJSLab">
+                        <div class="js-lab" id="background"><img src="../wwwroot/images/js-animation-lab.png" /></div>
+                        <div id="jsLabText1">JS Animation Library</div>
+                        <div class="js-lab" id="star1"></div>
+                        <div class="js-lab" id="star2"></div>
+                        <div class="js-lab" id="star3"></div>
+
+
+                    </div>
+                </a>
+
+            </div>
+        </div><!-- .content -->
+    </main><!-- .main-area -->
+
+
+    <div class="footer-container">
+        <div class="footer-wrap">
+            <footer class="footer-area">
+                <section class="footer-paragraph">
+                    <div>
+                        <p>
+                            &copy;Sim Ruble
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <span aria-hidden="true" data-icon="\e9d4" class="icon-sun"></span>
+                        <span aria-hidden="true" data-icon="\e9a5" class="icon-rocket"></span>
+                        <span aria-hidden="true" data-icon="\eab0" class="icon-github"></span>
+                        <span aria-hidden="true" data-icon="\ead1" class="icon-pinterest"></span>
+                        <span aria-hidden="true" data-icon="\eac9" class="icon-linkedin"></span>
+
+                    </div>
+                </section>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Scripts for accessible mobile-first navigation -->
+    <script type="text/javascript" src="../wwwroot/js/libs/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="../wwwroot/js/navigation.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+</body>
+
+</html>
