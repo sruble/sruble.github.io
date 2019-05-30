@@ -1,4 +1,8 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿
+(function () {
 
-// Write your Javascript code.
+    //var tl1 = new AnimationTimeline();
+    var tl1 = new TimeLineMax();
+    tl1.from('#star1', 1.3, { top: -500 });
+
+}());

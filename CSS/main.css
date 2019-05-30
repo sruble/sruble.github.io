@@ -8,32 +8,25 @@ body {
 }
 
 .main-content{
-/*    border-style: solid;*/
     margin-top:5px;
-/*    margin-right: 300px;*/
-        padding-left: 0.5em;
+    padding-left: 0.5em;
     padding-top: 1em;
 }
 
-.main-area {
-/*    padding: 15px;*/
-}
 
-.image-two {
-    
-     opacity: 0;
+
+.image-two {   
+  opacity: 0;
   animation: hideshow 5s  ease infinite;
 }
+
 @keyframes hideshow {
   0% { opacity: 1; }
   10% { opacity: 1; }
   15% { opacity: 1; }
   50%{opacity: 0;}
   100% { opacity: 0; }
- 
 }
-
-
 
 
 #image-one {
@@ -58,8 +51,6 @@ body {
     
 }
 
-
-
 .image-three {
 
     padding-left: 50px;
@@ -76,20 +67,13 @@ body {
 }
 
 
-.content {
-    
+.content {   
     display: grid;
 }
 
-/*
--------------------------------------------------
-*/
-
-
+/*-------------------------------------------------*/
 /*GALLERY DESIGN TWO*/
-/*
------------------------------------
-*/
+/*-----------------------------------*/
 .gall-groups {
   background-color: #597E8E;
 }
@@ -101,7 +85,6 @@ body {
 height: 200px; 
     width: 320px;
     padding: 5px;
-/*    background-color: white;*/
     margin: 5px;
     filter: grayscale(.75);
 }
@@ -124,14 +107,10 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
      width: 320px;
       height: 320px;
 }
-/*
--------------------------------------------------------
-*/
 
+/*-------------------------------------------------------*/
 /*Creating a Basic hexagon*/
-/*
-------------------------------------------
-*/
+/*------------------------------------------*/
 /*
     .hexagon {
       width: 100px;
@@ -173,13 +152,9 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 
 
 
-/*
----------------------------------------------
-*/
+/*---------------------------------------------*/
 /*JS Animation Library*/
-/*
----------------------------------------------
-*/
+/*---------------------------------------------*/
 #jsLab {
     display: inline-block;
     /*background-color: lawngreen;*/
@@ -215,19 +190,44 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
         top: 0px;
         left: 0px;
         text-transform: lowercase;
-        /*text-shadow: 0px 2px 2px antiquewhite;*/
     }
 
+    /*top star*/
     #myJSLab #star1 {
         width: 50px;
-        /*height: 143px;*/
-        /*background-position: 0px -325px; bottom: 0px;*/
+        height: 95px; 
+        background-position: 0px -320px; 
+        top: 20px; 
+        left: 550px;
+
+
+    }
+
+    /*far left star*/
+    #myJSLab #star2 {
+        width: 50px;
+        height: 65px;
+        background-position: 0px -320px;
+        bottom: 65px;
         left: 0px;
     }
 
-    #myJSLab #star2 {
-        width: inherit
+    /*bottom star*/
+    #myJSLab #star3 {
+        width: 50px;
+        height: 75px;
+        background-position: 0px -315px;
+        bottom: 45px;
+        left: 220px;
     }
+
+
+    #myJSLab #jsLabText1 span {
+        display: inline-block;
+        position: relative;
+    }
+
+
 
 /*RESPONSIVE DESIGN*/
 

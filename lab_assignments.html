@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -15,44 +15,47 @@
     <!--    custom Font from Google-->
     <link href="https://fonts.googleapis.com/css?family=Pompiere|Raleway" rel="stylesheet">
 
-    <script src="../wwwroot/JS/svg-injector.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
 
 </head>
 
 <body>
-    <!--    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>-->
+
 
     <header class="header-area">
-        <!--change from masthead-->
+
         <div class="site-branding">
             <h1 class="site-title"><a href="index.html">Sim Ruble: Portfolio</a></h1>
-        </div><!-- .site-title -->
+        </div>
         <div class="lab-heading">
-            <!--<a><img src="../wwwroot/images/po9.jpg"></a>-->
-            <h1 >[Lab Assignments]</h1>
+
+            <h1>[Lab Assignments]</h1>
 
         </div>
-    </header><!-- .masthead --><!--now changed to header-area--->
+    </header>
 
-
-    <section class="nav-items">
-        <div>
-            <p class=""><a href="index.html">Home</a></p>
-        </div>
-        <div>
-            <p class=""><a href="web_development.html">Work</a></p>
-        </div>
-        <div>
-            <p class=""><a href="photography.html">Photography</a></p>
-        </div>
-        <div>
-            <p class=""><a href="about_me.html">About Me</a></p>
-        </div>
-    </section>
 
 
     <main class="main-area">
+
+        <nav>
+            <section class="nav-items">
+                <div>
+                    <p class=""><a href="index.html">Home</a></p>
+                </div>
+                <div>
+                    <p class=""><a href="web_development.html">Work</a></p>
+                </div>
+                <div>
+                    <p class=""><a href="photography.html">Photography</a></p>
+                </div>
+                <div>
+                    <p class=""><a href="about_me.html">About Me</a></p>
+                </div>
+            </section>
+        </nav>
+
         <div class="content">
 
             <section class="content-section">
@@ -97,15 +100,17 @@
                 <p>
                     Lab overview and description; summary; explaination; other.
                 </p>
-                <p>GSAP tools that I used were: .</p>
-                <p>I chose these libraries because...</p>
-                <div>the visual will go here</div>
+                <p>GSAP tools I used were the TweenMax and TimeLineMax. I chose these libraries becuase I was familiar using the libraries in a previous assignment. </p>
 
 
                 <a id="jsLab" href="web_development.html">
                     <div id="myJSLab">
                         <div class="js-lab" id="background"><img src="images/js-animation-lab.png" /></div>
-                        <div id="jsLabText1">JS Animation Library</div>
+                        <div id="jsLabText1">
+                            <!--JS Animation Library-->
+                            <span id="lt01">J</span><span id="lt02">S</span> <span id="lt03">A</span><span id="lt04">n</span><span id="lt05">i</span><span id="lt06">m</span><span id="lt07">a</span><span id="lt08">t</span><span id="lt09">i</span><span id="lt10">o</span><span id="lt11">n</span> <span id="lt12">L</span><span id="lt13">i</span><span id="lt14">b</span><span id="lt15">r</span><span id="lt16">a</span><span id="lt17">r</span><span id="lt18">y</span>
+                            <!--JS Animation Library-->
+                        </div>
                         <div class="js-lab" id="star1"></div>
                         <div class="js-lab" id="star2"></div>
                         <div class="js-lab" id="star3"></div>
@@ -145,14 +150,35 @@
 
     <!-- Scripts for accessible mobile-first navigation -->
     <script type="text/javascript" src="JS/libs/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="JS/navigation.js"></script>
+    <!--<script type="text/javascript" src="JS/navigation.js"></script>-->
+    <!--this was in the head before...not sure if it makes a difference-->
+    <script src="JS/svg-injector.min.js"></script>
+
 
 
     <!--    LightBox script tag /////  -->
     <!--<script type="text/javascript" src="JS/lightbox-plus-jquery.min.js"></script>-->
+    <!--JS Animation Library-->
+    <script type="text/javascript" src="TweenMax.min.js"></script>
+    <script type="text/javascript" src="TimelineMax.min.js"></script>
 
+    <script type="text/javascript" src="JS/site.js"></script>
+    <script type="text/javascript" src="JS/script.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script type="text/javascript">
+        ////(function () {
+
+    var tl1 = new AnimationTimeline();
+    var tl1 = new TimeLineMax();
+        tl1.from('#star1', 1.3, { ease: Power2.easeOut })
+            .from('#star2', 1.5, { opacity: 0, ease: Bounce.easeOut }, '-=1.5')
+            .from('#star3', 1.5, { scale: .5, opacity: .5, ease: Power2.easeOut }, '-=.5')
+
+            ;
+
+}());
+    </script>
+
 </body>
 
 </html>
