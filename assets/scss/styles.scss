@@ -1,0 +1,21 @@
+
+/*create @mixin directive*/
+@mixin transform ($centre){
+    -webkit-transform: $centre;
+    -moz-transform: $centre;
+    -ms-transform: $centre;
+    transform: $centre;
+}
+
+
+/*insert Variable using Partial. */
+@import '_partial';
+#sassLabTitle h3 {
+    color: $green;
+    font-size: $font-size; //2em 
+}
+
+/*use @mixin directive*/
+#sassLabText {
+    @include transform (rotate(45deg)); 
+}
