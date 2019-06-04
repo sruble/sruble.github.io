@@ -1,0 +1,259 @@
+/*
+
+
+    FONT: 
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Abel', sans-serif;
+
+    COLORS:
+
+    */
+
+
+
+
+.kids-design {
+    background: #011936;
+    
+
+}
+
+#kids-design-banner {
+    text-align: center;
+    border: solid;
+    color: white;
+    margin: 2px; 
+    padding: 5px; 
+    margin-bottom: 50px; 
+}
+
+#kids-page-nav {
+    color: white;
+}
+
+.portfolio-two-title-one{
+    font-family: 'Abel', sans-serif;
+    color: white;
+}
+
+.portfolio-two-title-two {
+    font-family: 'Abel', sans-serif;
+    color: white;
+    font-size: 6em;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+    z-index: 1;
+    margin-bottom: -25px;
+    /*transform: rotate(-15deg)*/
+}
+
+#kids-footer, p {
+    color: white;
+}
+
+body {
+    height: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+.wrapper {
+    
+}
+
+    .wrapper > div {
+        display:inline-flex;
+        padding: 25px;
+    }
+
+/*
+.sun {
+    width: 250px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 125px ! important;
+}
+*/
+
+    .sun .planet {
+        width: 10em;
+        height: 10.5em;
+        background: linear-gradient(to top left, yellow, red, yellow);
+        border-radius: 50%;
+        box-shadow: 0 0 15px rgba(255, 255, 8, .5);
+        z-index: -1;
+        animation: sunspins 45s infinite linear;
+        /*transform: translate(-50%, -50%);*/
+        /*margin: 0 auto;*/
+        /*animation: spinsun 40s infinite linear;*/
+    }
+
+    @keyframes sunspins {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+/*
+.mercury {
+        position: absolute;
+        width: 400px;
+        z-index: 2; 
+    animation: orbitmercury 12s infinite linear;
+        top: -7.5px;
+}
+*/
+
+    .mercury .planet {
+        width: 3.5em;
+        height: 3.5em;
+        background: linear-gradient( darkgrey, grey, white);
+        border-radius: 50%;
+        background-color: navy;
+    }
+
+
+/*
+.venus {
+        position: absolute;
+        width: 606px; 
+        z-index: 3;
+    animation: orbitvenus 15s infinite linear;
+        top: -19px; 
+}
+*/
+
+    .venus .planet {
+        width: 6em;
+        height:  6em;
+        background: linear-gradient( beige, lightgrey, beige, grey, white, beige, lightgrey, white, beige, lightgrey);
+        border-radius: 50%;
+    }
+
+
+
+/*
+.earth {
+        position: absolute;
+        width: 910px; 
+        z-index: 4; 
+    animation: orbitearth 20s infinite linear;
+        top: -20px; 
+}
+*/
+
+    .earth .planet {
+        width:  5.5em;
+        height:  5.5em;
+        background: linear-gradient(lightblue, blue, green, blue, lightblue);
+        border-radius: 50%;
+        /*animation: anti-spin 20s infinite linear;*/
+    }
+
+ 
+
+/*
+.mars {
+        position: absolute;
+        width: 1106px; 
+        z-index: 5;
+    animation: orbitmars 30s infinite linear;
+        top: -11px; 
+}
+*/
+
+    .mars .planet {
+        width: 6.2em;
+        height: 6.2em;
+        background: linear-gradient( red, darkred, red, darkred);
+        border-radius: 50%;
+        /*animation: anti-spin 30s infinite linear;*/
+    }
+
+   
+
+/*
+.jupiter {
+          position: absolute;
+        width: 1800px; 
+        z-index: 6;
+    animation: orbitmars 50s infinite linear;
+        top: 264px; 
+}
+*/
+
+    .jupiter .planet {
+        width: 9em;
+        height: 9em;
+        background: linear-gradient( beige, tan, beige, tan, beige, tan );
+        border-radius: 50%;
+    }
+
+
+.saturn .planet {
+    width:9em;
+    height: 9em;
+    background: linear-gradient(to bottom right, tan, peru, sienna, peru, goldenrod, tan, sienna, tan );
+    border-radius: 50% 0 50% 0;
+    position: relative;
+}
+
+.uranus .planet {
+    width: 7em;
+    height: 7em;
+    background: linear-gradient(to top, powderblue, lightblue, skyblue, lightblue, skyblue, steelblue, steelblue );
+    border-radius: 50%;
+}
+
+.neptune .planet {
+    width: 7em;
+    height: 7em;
+    background: linear-gradient(cornflowerblue , midnightblue , royalblue , cornflowerblue, royalblue , midnightblue, royalblue , midnightblue );
+    border-radius: 50%;
+
+}
+
+.planet h3{
+text-align: center;
+    color: white;
+      font-family: 'Abel', sans-serif;
+
+}
+.planet {
+    display:inline-block;
+    margin-top: 5em;
+}
+
+
+.planet:hover {
+    animation: bounce 0.4s alternate infinite ;
+}
+     
+        @keyframes bounce {
+            from {
+                transform: translateY(0px);
+            }
+            to {
+                transform: translateY(-150px);
+            }
+        }
+    
+#planetWrapper{
+    text-align: center;
+}
+
+
+/*RESPONSIVE DESIGN*/
+@media screen and (min-width: 320px){
+    
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+}
