@@ -1,0 +1,158 @@
+/*
+
+.experimental-content div{
+    width: 500px; 
+    height: auto;
+}
+
+
+.experimental-main{
+    display: flex;
+    justify-content: space-between;
+}*/
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+/*
+
+FONT FOR: Portfolio Design 1: Gallery Design 
+font-family: 'Raleway', sans-serif;
+font-family: 'Pompiere', cursive;
+
+
+FONT FOR: Portfolio Design 1: Gallery Design
+font-family: 'Great Vibes', cursive;
+font-family: 'Raleway', sans-serif;
+
+font-family: 'Allura', cursive;
+
+FONT FOR: Experimental Design/Skills demonstration
+
+*/
+
+.exp-bdy {
+    background-color: lightgrey;
+    font-size: 100%;
+    font-size: 18px; 
+   
+}
+
+.exp-banner {
+    background-color: darkgrey;
+     text-align: center;
+    font-size: 1.8em;
+    padding: 1px; 
+}
+
+h2 {
+    padding-left: 40px;
+    font-size: 1.8em;
+}
+
+h3 {
+    background-color: floralwhite;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+
+
+
+
+.expample-gallery{
+    background-color: cadetblue;  
+    background: linear-gradient(to top right, lightseagreen, lightseagreen, darkcyan, teal);
+     box-shadow: 5px 10px grey;
+}
+
+
+
+.experimental-container {
+/*    min-width: 300px;*/
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 50px;
+}
+
+.experimental-container > div {
+    margin: 20px;
+    text-align: center;
+    padding: 20px;   
+}
+#textExample {
+     
+}
+
+
+#illustratorExample img {
+    padding: 50px;
+     text-align: center;
+
+}
+
+#textExample img{
+    padding: 50px;
+}
+
+#photoshopExample a img{
+    padding: 50px;
+    text-align: center;
+}
+
+#responsivePicsExample {
+  text-align: center;
+}
+
+.button {
+    padding: 10px; 
+}
+
+/*link to home Page of portfolio*/
+.beginning {
+    background-color: lightgrey;
+    width: 200px;
+    padding: 25px;
+    text-align: center;
+}
+/*==================
+RESPONSIVE DESIGN
+==================*/
+
+@media screen and (min-width: 600px){
+    
+    .experimental-content {
+        
+/*        width: 350px;*/
+/*    min-width: 300px;*/  
+/*        display: flex;*/
+/*
+        padding: 10px; 
+        margin: 20px; 
+*/
+/*        width: 400px;*/
+    }
+    
+    
+}
+
+@media screen and (min-width: 480px ){
+    
+    
+    .experimental-content {
+        
+/*
+        display: flex; 
+        justify-content: space-between;
+*/
+    }
+     .experimental-content > div  {
+/*        max-width:400px;*/
+/*        max-width: 300px;*/
+/*             width: 450px;*/
+
+/*         width: calc(50% - 2em);*/
+       
+    }
+}

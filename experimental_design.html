@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="Core starting template for responsive web design in the the browser"/>       
+<!--        STYLESHEETS -->
+        <link rel="stylesheet" href="CSS/experimental_design.css" type="text/css" media="all">       
+        <link rel="stylesheet" href="style.css" type="text/css" media="all">            
+<!--        custom Font from Google -->
+        <link href="https://fonts.googleapis.com/css?family=Pompiere|Raleway" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">        
+<!--    Connecting js Style Sheet with ColorBox functions at the END of document-->     
+    </head>
+    
+    <body class="exp-bdy">
+      
+        <div class="exp-banner">
+            <header >
+                <h1>Experimental Design</h1>
+                <nav>       
+                </nav>
+            </header> 
+        </div>
+        
+        <main class="experimental-main">  
+            <h2>Skills Demonstration</h2>
+            
+            <aside class="beginning">
+                <a href="index.html"><p>Back to Main Portfolio</p></a>
+            </aside> 
+
+            <section>
+<!--                 content class is styled as display: grid;-->
+<!--                Not to self: setting the max-width for img tags helped keep the image within the div css// I was having trouble with this -->
+                <div class="experimental-container">
+                    <div class="expample-gallery" id="textExample">
+                        <h3>1: HTML</h3>
+                        <p>I've recently had the opportunity to build a number of websites in a rather short period of time. This led me to realize how unorganized my code was- </p>
+                        <a href="images/text_example.PNG"><img src="images/text_example.PNG" alt="Image of HTML code." style="max-width: 300px;"/></a>
+                    </div>
+                    <div  class="expample-gallery" id="styleExample">
+                        <h3>2: CSS</h3>
+                        <p>I recently learned CSS code that helped me create these hexagons out of my images.</p>
+                       
+                            <a href="images/delete/mobile.PNG">
+                                <img src="images/delete/mobile.PNG" alt="Image of CSS code." style="max-width: 300px;"/>
+                            </a>
+                        
+                    </div>
+                    <div  class="expample-gallery" id="animationExample">
+                        <h3>3: JavaScript</h3>
+                        <p>Familiarity with JavaScript libraries, SVG icons, and animation. </p>
+<!--                        <div >-->
+                            <img class="image-two" src="images/animation_lab.svg" style="width: 2em; height: 2em; margin: .5em;">
+                            <img class="image-three" src="images/animation_lab.svg" style="width:2em; height: 2em; margin:0.5em;">
+<!--                            <img id="image-one" src="images/animation_lab.svg" style="width:2em; height: 2em; margin:0.5em;">-->
+<!--                        </div>-->
+                    </div>
+                    <div  class="expample-gallery" id="sassyExample">
+                        <h3>4: Sass</h3>
+                        <p>I'm currently learning more about Sass and and will be excited to post my work here soon. </p>
+                    </div>
+                    <div  class="expample-gallery" id="responsivePicsExample">
+                        <h3>5: Responsive Design</h3>
+                        <p>Images of my <a href="gallery_design_two.html">Gallery Design</a> responsive displays on tablet and mobile.</p>
+    <!--                        <img src="images/delete/mobile.PNG">-->
+                       
+                            <a href="images/delete/tablet.PNG">
+                                <img src="images/delete/tablet.PNG" style="max-width: 300px; height: auto;">
+                            </a>
+                        
+                    </div>
+                    <div  class="expample-gallery" id="photoshopExample">
+                        <h3>6: Photoshop</h3>
+                        <p>A small example of my experience with Photoshop, with the removal of people in the foreground</p>
+<!--                        <div>-->
+                            <a href="images/pre-photoshop.jpg">
+                                <img src="images/pre_photoshop_example.png">
+                            </a>
+                            <a href="images/photoshop_example.jpg">
+                                <img src="images/photoshop_example.png" >
+                            </a>
+<!--                        </div>-->
+                    </div>
+                    <div class="expample-gallery" id="illustratorExample">
+                        <h3>7: Illustrator</h3>
+                        <p>Using Illustrator to create design mock-ups of a site.</p>
+<!--                        <div>-->
+                            <a href="images/sprint_1_ui_2.svg">
+                                <img src="images/sprint_1_ui_2.svg" style="max-width: 300px;">
+                            </a>
+                            <a href="images/sprint_1_ui.svg">
+                                <img src="images/sprint_1_ui.svg" style="max-width: 300px;">
+                            </a>
+<!--                        </div>-->
+                    </div>
+                    <div  class="expample-gallery" id="gitExample">
+                        <h3>8: GitHub Experience</h3>
+                        <p>My experience with GitHub over the last year.</p>
+                        <a href="http://github.com/sruble">Link to GitHub repositories</a>
+                        <span aria-hidden="true" data-icon="\eab0" class="icon-github"></span>
+                    </div>             
+                </div> 
+            </section>
+        </main>
+        
+        <footer>           
+            <div class="copyright-text">
+                <a href="index.html"> &copy;Sim Ruble</a>
+            </div>            
+        </footer>
+        
+    </body>
+    
+<!--    Scripts will go here-->    
+    <script>
+         //JavaScript Library
+         // Elements to inject
+         var mySVGsToInject = document.querySelectorAll('img.inject-me');
+         // Do the injection
+         SVGInjector(mySVGsToInject);       
+     </script>
+    
+<!--
+        <script type="text/javascript" src="JS/svg-injector.min.js"></script>
+
+    <script type="text/javascript" src="JS/script.js"></script>
+-->
+    
+     <!--    ColorBox jQuery Library /// ///  -->
+    <script type="text/javascript" src="JS/colorbox/jquery.colorbox-min.js"></script>
+    
+</html>
