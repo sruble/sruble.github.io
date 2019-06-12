@@ -18,6 +18,177 @@ body {
 
 /* 
 -------------------------------------------------
+trying to create more enhanced links // 
+CAMERA LENS
+*/
+
+/*
+.container{
+  font-size: 8px;
+  width: 38.5em;
+  height: 38.5em;
+  margin: 0 auto;
+  position: relative;
+}
+
+.shutter{
+  width: 21.5em;
+  height: 21.5em;
+  border-radius: 50%;
+  position: absolute;
+  top: 8.625em;
+  left: 8.625em;
+  background: #181816;
+  box-shadow: 0 0 0 0.75em #181816,0 0 0 1.5em #373737;
+  overflow: hidden;
+}
+.leaf,.a:before,.a:after,.b:before,.b:after{
+  width: 22em;
+  height: 22em;
+  position: absolute;
+  border-radius: 0 0 9em 13em/0 0 3em 5em;
+}
+.a:before,.a:after,.b:before,.b:after{
+  content: "";
+  display: block;
+}
+.a{
+  bottom: 4.375em;
+  right: 1em;
+  box-shadow: 0 0.25em 0 #6a9fb5, -8em 3em 4em #619eb7, 0 10em 0 #006670,inset 0 -0.25em .25em #03282b;
+}
+
+
+.b{
+  bottom: -5.5em;
+  right: -2em;
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+  box-shadow: 10em 7em 6em #1c3664, 0 10em 0 #1c3664,inset 0 -0.25em .25em #03282b;
+}
+
+.c{
+  bottom: 4.375em;
+  right: 1em;
+  clip: rect(0em, 10em, 43.11em, 0em);
+  box-shadow: 0 0.25em 0 #6a9fb5, -3em 2.5em 4em #619eb7, 0 10em 0 #006670,inset 0 -0.25em .25em #03282b;
+}
+.a:before{
+  bottom: -4em;
+  right: 4em;
+  box-shadow: 3em 2em 3em #0b848e, 0 10em 0 #18a4af,inset 0 -0.25em .25em #03282b;
+  -webkit-transform: rotate(300deg);
+  -o-transform: rotate(300deg);
+  -moz-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+.a:after{
+  bottom: -9.5em;
+  right: 2.5em;
+  box-shadow: 8em 5em 8em #03282b, 0 10em 0 #006670,inset 0 -0.25em .25em #03282b;
+  -webkit-transform: rotate(240deg);
+  -o-transform: rotate(240deg);
+  -moz-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+.b:before{
+  bottom: -5.375em;
+  right: 4.5em;
+  -webkit-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+  clip: rect(0em, 18em, 43.11em, 0em);
+  box-shadow: 5.5em 10em 4em #256186, 0 10em 0 #2f3241,inset 0 -0.25em .25em #044147;
+}
+.b:after{
+  bottom: -8.5em;
+  right: 2.3em;
+  -webkit-transform: rotate(-120deg);
+  -o-transform: rotate(-120deg);
+  -moz-transform: rotate(-120deg);
+  transform: rotate(-120deg);
+  clip: rect(0em, 16em, 43.11em, 0em);
+  box-shadow: -0.625em 0em 0.725em #044147,-11em 2em 5em #1c3664, 0 10em 0 #03282b,inset 0 -0.25em .25em #03282b;
+}
+
+
+.lens-outer:before{
+  content: "";
+  display: block;
+  width: 8.75em;
+  height: 8.75em;
+  position: absolute;
+  top: .625em;
+  left: .625em;
+  border-radius: 50%;
+  background-color: #35465e;
+  background-image: -webkit-linear-gradient(-45deg, #112b3c, #044147 70%);
+  background-image:    -moz-linear-gradient(-45deg, #112b3c, #044147 70%);
+  background-image:     -ms-linear-gradient(-45deg, #112b3c, #044147 70%);
+  background-image:      -o-linear-gradient(-45deg, #112b3c, #044147 70%);
+  box-shadow: 0 0 0 0.125em #111d29;
+}
+
+
+.lens-outer:after{
+  content: "";
+  display: block;
+  width: 5.25em;
+  height: 5.25em;
+  position: absolute;
+  top: 2.375em;
+  left: 2.375em;
+  border-radius: 50%;
+  background-color: #121919;
+  background-image: -webkit-linear-gradient(-45deg, #0a2035, #011c1e 70%);
+  background-image:    -moz-linear-gradient(-45deg, #0a2035, #011c1e 70%);
+  background-image:     -ms-linear-gradient(-45deg, #0a2035, #011c1e 70%);
+  background-image:      -o-linear-gradient(-45deg, #0a2035, #011c1e 70%);
+  box-shadow: 0 0 0 .125em #393745;
+}
+
+
+.lens{
+  width: 2.75em;
+  height: 2.75em;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  top: 9.5em;
+  left: 9.125em;
+  border: .125em solid #23272d;
+}
+
+.lens:before{
+  content: "";
+  display: block;
+  width: 8.25em;
+  height: 8.25em;
+  border-radius: 50%;
+  position: absolute;
+  top: -2.875em;
+  left: -2.875em;
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-shadow: inset -.375em 0 .375em -.25em #223e72;
+}
+*/
+
+/* 
+-------------------------------------------------
+END - of enhanced links CSS
+*/
+
+
+
+
+/* 
+-------------------------------------------------
 SVG and Font Icons Lab
 */
 .image-two {
