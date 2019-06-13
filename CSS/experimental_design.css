@@ -71,9 +71,11 @@ h3 {
 
 .experimental-container {
 /*    min-width: 300px;*/
+/*
     display: flex;
     flex-wrap: wrap;
     grid-gap: 50px;
+*/
 }
 
 .experimental-container > div {
