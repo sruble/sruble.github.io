@@ -3,7 +3,8 @@
 -------------------------------------------------
 */
 body {
-    padding: 12px;
+    padding: 10px;
+    margin: 20px;
 
 }
 
@@ -15,6 +16,32 @@ body {
     padding-top: 1em;
 }
 
+.current_work {
+    margin-top: 50px;
+}
+
+.current_work div {
+    margin: 10px; 
+    padding: 50px;
+}
+.content {
+/*    margin: 50px; */
+}
+
+.content h2 {
+    text-align: center;
+    margin: 50px; 
+}
+
+.content-text {
+/*    width: 400px; */
+
+    margin-left: 200px;
+    margin-right: 200px;
+    
+    font-size: 1.2em;
+    text-align: center;
+}
 
 /* 
 -------------------------------------------------
